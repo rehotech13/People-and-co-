@@ -1,0 +1,6 @@
+{
+  "name": "People and Co Construction",
+  "description": "Official corporate portal for People and Co Construction - Civil Engineering, Building Services, Structural Design, Construction, and Project Management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
