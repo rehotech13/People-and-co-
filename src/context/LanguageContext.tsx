@@ -70,7 +70,7 @@ export const TRANSLATIONS: Record<LanguageCode, Record<string, string>> = {
     // Hero Section
     'hero.badge': 'PEOPLE AND CO CONSTRUCTION FIRM',
     'hero.coverage': 'Delta State & Nationwide Nigeria',
-    'hero.counter': '150+ Successful Projects Completed',
+    'hero.counter': 'Successful Projects Completed',
     'hero.title_p1': 'ENGINEERED STRENGTH.',
     'hero.title_p2': 'LASTING VALUE.',
     'hero.subtitle':
@@ -83,7 +83,7 @@ export const TRANSLATIONS: Record<LanguageCode, Record<string, string>> = {
     'stats.years': '10+ Years Experience',
     'stats.years_sub': 'Continuous civil execution in Delta State & nationwide since 2014',
     'stats.experts': '50+ Certified Experts',
-    'stats.experts_sub': 'COREN engineers, NIA architects & chartered quantity surveyors',
+    'stats.experts_sub': 'Certified civil engineers, NIA architects & chartered quantity surveyors',
     'stats.projects': '200+ Projects Handled',
     'stats.projects_sub': 'Turnkey residential villas, commercial plazas & road drainage',
     'stats.safety': '100% Structural Integrity',
@@ -163,7 +163,7 @@ export const TRANSLATIONS: Record<LanguageCode, Record<string, string>> = {
     // Hero Section
     'hero.badge': 'PEOPLE AND CO CONSTRUCTION FIRM',
     'hero.coverage': 'Delta State & Whole Nigeria',
-    'hero.counter': 'Over 150+ Solid Projects We Don Finish',
+    'hero.counter': 'Solid Projects We Don Finish',
     'hero.title_p1': 'SOLID BUILDING.',
     'hero.title_p2': 'VALUE WEY DEY LAST.',
     'hero.subtitle':
@@ -176,7 +176,7 @@ export const TRANSLATIONS: Record<LanguageCode, Record<string, string>> = {
     'stats.years': '10+ Years Experience',
     'stats.years_sub': 'Since 2014 we dey build heavy projects across Delta State & Naija',
     'stats.experts': '50+ Certified Engineers',
-    'stats.experts_sub': 'COREN engineers, architects & quantity surveyors wey sabi the work well',
+    'stats.experts_sub': 'Certified engineers, architects & quantity surveyors wey sabi the work well',
     'stats.projects': '200+ Projects We Don Handle',
     'stats.projects_sub': 'Luxury duplex, commercial plaza, drainage and solid road works',
     'stats.safety': '100% Solid Structural Record',
@@ -256,7 +256,7 @@ export const TRANSLATIONS: Record<LanguageCode, Record<string, string>> = {
     // Hero Section
     'hero.badge': 'PEOPLE AND CO CONSTRUCTION FIRM',
     'hero.coverage': 'Ipinle Delta & Gbogbo Naijiria',
-    'hero.counter': 'Ju 150+ Iṣẹ́ Ikọ́le To Pari Ni Aṣeyọri',
+    'hero.counter': 'Iṣẹ́ Ikọ́le To Pari Ni Aṣeyọri',
     'hero.title_p1': 'IKỌ́LE TO DÁJÚ.',
     'hero.title_p2': 'ITỌ́JU TO LỌ́JỌ́ LÓRÍ.',
     'hero.subtitle':
@@ -269,7 +269,7 @@ export const TRANSLATIONS: Record<LanguageCode, Record<string, string>> = {
     'stats.years': 'Ọdun 10+ Iriri Iṣẹ́',
     'stats.years_sub': 'Iṣẹ́ ikole to tẹsiwaju ni Delta ati Naijiria lati 2014',
     'stats.experts': '50+ Awọn Onimọ-ẹrọ To Kọja Idanwo',
-    'stats.experts_sub': 'Awọn onimọ-ẹrọ COREN, awọn ayaworan NIA & awọn oniwon iye',
+    'stats.experts_sub': 'Awọn onimọ-ẹrọ to pegede, awọn ayaworan NIA & awọn oniwon iye',
     'stats.projects': '200+ Iṣẹ́ Ti A Ti Ṣe',
     'stats.projects_sub': 'Awọn ile aladun, awọn ile-iṣowo nla & awọn oju-ọna',
     'stats.safety': '100% Igbasilẹ Aabo To Daju',
@@ -349,7 +349,7 @@ export const TRANSLATIONS: Record<LanguageCode, Record<string, string>> = {
     // Hero Section
     'hero.badge': 'PEOPLE AND CO CONSTRUCTION FIRM',
     'hero.coverage': 'Delta Steeti & Naịjirịa Niile',
-    'hero.counter': 'Ihe Karịrị 150+ Ọrụ Rụzuru nke Ọma',
+    'hero.counter': 'Ọrụ Rụzuru nke Ọma',
     'hero.title_p1': 'IWU ỤLỌ SIRI IKE.',
     'hero.title_p2': 'URU NA-ADI ETEKA.',
     'hero.subtitle':
@@ -362,7 +362,7 @@ export const TRANSLATIONS: Record<LanguageCode, Record<string, string>> = {
     'stats.years': 'Afọ 10+ nke Ahụmịhe',
     'stats.years_sub': 'Iwu ụlọ n\'ofe Delta na Naịjirịa kemgbe 2014',
     'stats.experts': '50+ Ndị Ọkachamara Kwadoro',
-    'stats.experts_sub': 'Ndị injinia COREN, ndị na-ese ụkpụrụ NIA na ndị na-agụ ọnụahịa',
+    'stats.experts_sub': 'Ndị injinia ruru eru, ndị na-ese ụkpụrụ NIA na ndị na-agụ ọnụahịa',
     'stats.projects': '200+ Ọrụ Anyị Rụrụ',
     'stats.projects_sub': 'Ụlọ obibi dị elu, ogige ahịa na drainage okporo ụzọ',
     'stats.safety': '100% Nchekwa Ọrụ Ụlọ',
@@ -442,7 +442,7 @@ export const TRANSLATIONS: Record<LanguageCode, Record<string, string>> = {
     // Hero Section
     'hero.badge': 'PEOPLE AND CO CONSTRUCTION FIRM',
     'hero.coverage': 'Jihar Delta Da Fadin Najeriya',
-    'hero.counter': 'Fiye Da Ayyuka 150+ Da Aka Kammala',
+    'hero.counter': 'Ayyuka Da Aka Kammala',
     'hero.title_p1': 'GINI MAI INGANCI.',
     'hero.title_p2': 'DARAJAR DA KE DOREWA.',
     'hero.subtitle':
@@ -455,7 +455,7 @@ export const TRANSLATIONS: Record<LanguageCode, Record<string, string>> = {
     'stats.years': 'Fiye Da Shekaru 10 Na Kwarewa',
     'stats.years_sub': 'Gudanar da aikin gini a Delta da Najeriya tun daga 2014',
     'stats.experts': 'Kwararru 50+ Masu Lasisi',
-    'stats.experts_sub': 'Injiniyoyin COREN, masu tsara taswira NIA da masu auna kudi',
+    'stats.experts_sub': 'Injiniyoyi masu lasisi, masu tsara taswira NIA da masu auna kudi',
     'stats.projects': 'Ayyuka 200+ Da Muka Kula Da Su',
     'stats.projects_sub': 'Manyan gidaje na alfarma, cibiyoyin kasuwanci da magudanan ruwa',
     'stats.safety': 'Ingancin Tsarin Gini 100%',

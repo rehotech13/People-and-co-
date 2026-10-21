@@ -14,7 +14,7 @@
     "currentPhase": "Phase 2: Reinforced Ground Floor Substructure",
     "status": "on_track",
     "lastInspectionDate": "18 Oct 2026",
-    "siteHeroImage": "/src/assets/images/service_building_construction_1792339538812.jpg",
+    "siteHeroImage": "/images/service_building_construction_1792339538812.jpg",
     "milestones": [
       {
         "id": "m-new-1",
@@ -89,7 +89,7 @@
     "currentPhase": "Phase 4: First-Floor Decking & Penthouse Superstructure",
     "status": "on_track",
     "lastInspectionDate": "16 Apr 2026",
-    "siteHeroImage": "/src/assets/images/service_building_construction_1792339538812.jpg",
+    "siteHeroImage": "/images/service_building_construction_1792339538812.jpg",
     "milestones": [
       {
         "id": "m-1",
@@ -203,7 +203,7 @@
     "currentPhase": "Phase 6: Glass Curtain Wall Glazing & Exterior Interlock",
     "status": "ahead_of_schedule",
     "lastInspectionDate": "15 Apr 2026",
-    "siteHeroImage": "/src/assets/images/project_commercial_plaza_1792339539199.jpg",
+    "siteHeroImage": "/images/project_commercial_plaza_1792339539199.jpg",
     "milestones": [
       {
         "id": "m-201",
@@ -280,7 +280,7 @@
     "currentPhase": "Phase 3: Culvert Wing Walls & Deck Slab Shuttering",
     "status": "on_track",
     "lastInspectionDate": "14 Apr 2026",
-    "siteHeroImage": "/src/assets/images/service_civil_engineering_1792339538398.jpg",
+    "siteHeroImage": "/images/service_civil_engineering_1792339538398.jpg",
     "milestones": [
       {
         "id": "m-301",

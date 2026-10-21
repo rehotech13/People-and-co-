@@ -11,10 +11,10 @@
     "priceRaw": 28000000,
     "size": "1,200 sq. meters (approx. 2 Standard Plots)",
     "description": "High-visibility commercial frontage suitable for shopping complexes, corporate branch offices, fuel stations, or warehousing. Directly accessible along the paved highway with verified layout beacons.",
-    "image": "/src/assets/images/project_commercial_plaza_1792339539199.jpg",
+    "image": "/images/project_commercial_plaza_1792339539199.jpg",
     "images": [
-      "/src/assets/images/project_commercial_plaza_1792339539199.jpg",
-      "/src/assets/images/service_civil_engineering_1792339538398.jpg"
+      "/images/project_commercial_plaza_1792339539199.jpg",
+      "/images/service_civil_engineering_1792339538398.jpg"
     ],
     "features": [
       "Direct Highway Frontage",
@@ -40,10 +40,10 @@
     "bathrooms": 5,
     "size": "650 sq. meters building footprint",
     "description": "Contemporary all-en-suite 4-bedroom detached architectural villa designed for diaspora and executive clients. Features modern parapet roofing, private ante-room, spacious master suite, and perimeter security fencing.",
-    "image": "/src/assets/images/service_building_construction_1792339538812.jpg",
+    "image": "/images/service_building_construction_1792339538812.jpg",
     "images": [
-      "/src/assets/images/service_building_construction_1792339538812.jpg",
-      "/src/assets/images/hero_construction_modern_1792339537125.jpg"
+      "/images/service_building_construction_1792339538812.jpg",
+      "/images/hero_construction_modern_1792339537125.jpg"
     ],
     "features": [
       "All En-Suite Bedrooms",
@@ -67,10 +67,10 @@
     "priceRaw": 2500000,
     "size": "180 sq. meters usable floor space",
     "description": "Well-ventilated ground and first-floor commercial units suitable for financial institutions, diagnostic clinics, legal chambers, or logistics hubs. Dedicated power transformer and ample customer parking.",
-    "image": "/src/assets/images/hero_construction_modern_1792339537125.jpg",
+    "image": "/images/hero_construction_modern_1792339537125.jpg",
     "images": [
-      "/src/assets/images/hero_construction_modern_1792339537125.jpg",
-      "/src/assets/images/project_commercial_plaza_1792339539199.jpg"
+      "/images/hero_construction_modern_1792339537125.jpg",
+      "/images/project_commercial_plaza_1792339539199.jpg"
     ],
     "features": [
       "Dedicated Customer Parking",
@@ -96,10 +96,10 @@
     "bathrooms": 4,
     "size": "900 sq. meters compound",
     "description": "Beautifully finished twin semi-detached bungalows with separate compound gates, stamped concrete paving, pop ceilings, and prepaid digital meters.",
-    "image": "/src/assets/images/service_structural_design_1792339538521.jpg",
+    "image": "/images/service_structural_design_1792339538521.jpg",
     "images": [
-      "/src/assets/images/service_structural_design_1792339538521.jpg",
-      "/src/assets/images/service_building_construction_1792339538812.jpg"
+      "/images/service_structural_design_1792339538521.jpg",
+      "/images/service_building_construction_1792339538812.jpg"
     ],
     "features": [
       "POP Ceilings Throughout",

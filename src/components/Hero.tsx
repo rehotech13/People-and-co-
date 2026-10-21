@@ -19,7 +19,7 @@ export const Hero: React.FC<HeroProps> = ({
       {/* Background Architectural Image with Measured Scrim */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/src/assets/images/hero_construction_modern_1792339537125.jpg"
+          src="/images/hero_construction_modern_1792339537125.jpg"
           alt="Modern architectural construction site with crane and contemporary facade by People and Co Construction Firm"
           referrerPolicy="no-referrer"
           className="w-full h-full object-cover object-center scale-[1.02] filter brightness-[0.42] contrast-[1.08]"
@@ -50,7 +50,7 @@ export const Hero: React.FC<HeroProps> = ({
               <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500" />
             </span>
             <span className="text-[#F59E0B] font-extrabold text-sm sm:text-base tracking-tight">
-              150+
+              500+
             </span>
             <span className="text-xs sm:text-sm font-semibold text-white tracking-wide">
               {t('hero.counter', 'Successful Projects Completed')}
@@ -95,7 +95,7 @@ export const Hero: React.FC<HeroProps> = ({
           <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 p-4 rounded-xl bg-white/5 border border-white/10 backdrop-blur-xs mb-8 text-center">
             <div className="p-2 sm:p-3">
               <div className="text-2xl sm:text-3xl font-extrabold text-[#F59E0B] font-['Plus_Jakarta_Sans']">
-                150+
+                500+
               </div>
               <div className="text-[11px] sm:text-xs text-slate-300 font-medium mt-0.5">
                 Successful Projects Completed

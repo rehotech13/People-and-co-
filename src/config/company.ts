@@ -4,13 +4,13 @@ export const COMPANY_CONFIG = {
   name: 'PEOPLE AND CO CONSTRUCTION FIRM',
   shortName: 'PACCF',
   logoUrl: 'https://i.imgur.com/ujwkKdm.png',
-  logoFallback: '/src/assets/images/company_logo.png',
+  logoFallback: '/images/company_logo.png',
   headline: 'Building the Future. Creating Lasting Value.',
   tagline:
     'PEOPLE AND CO CONSTRUCTION FIRM delivers property, construction, structural design, civil engineering, and project management services tailored to clients’ needs.',
   stats: {
-    completedProjects: 150,
-    completedProjectsDisplay: '150+ Successful Projects Completed',
+    completedProjects: 500,
+    completedProjectsDisplay: '500+ Successful Projects Completed',
     yearsExperience: 12,
     clientSatisfactionRate: '99%',
     activeSites: 18,
@@ -101,7 +101,7 @@ export const COMPANY_SERVICES: ServiceItem[] = [
       'Heavy machinery deployment and expert civil surveying',
       'Adherence to federal and state ministry infrastructure standards'
     ],
-    image: '/src/assets/images/service_civil_engineering_1792339538398.jpg',
+    image: '/images/service_civil_engineering_1792339538398.jpg',
     iconName: 'Compass'
   },
   {
@@ -121,7 +121,7 @@ export const COMPANY_SERVICES: ServiceItem[] = [
       'Skilled artisans and qualified site supervisors',
       'High-grade blockwork, concrete mix design, and finishing'
     ],
-    image: '/src/assets/images/service_building_construction_1792339538812.jpg',
+    image: '/images/service_building_construction_1792339538812.jpg',
     iconName: 'Building2'
   },
   {
@@ -141,7 +141,7 @@ export const COMPANY_SERVICES: ServiceItem[] = [
       'Optimizes steel rebar and concrete ratios to curb wastage',
       'Smooth municipal approval and statutory permits processing'
     ],
-    image: '/src/assets/images/service_structural_design_1792339538521.jpg',
+    image: '/images/service_structural_design_1792339538521.jpg',
     iconName: 'Ruler'
   },
   {
@@ -161,7 +161,7 @@ export const COMPANY_SERVICES: ServiceItem[] = [
       'Direct material sourcing reducing client procurement overheads',
       'Timely completion within agreed contractual schedules'
     ],
-    image: '/src/assets/images/hero_construction_modern_1792339537125.jpg',
+    image: '/images/hero_construction_modern_1792339537125.jpg',
     iconName: 'HardHat'
   },
   {
@@ -181,7 +181,7 @@ export const COMPANY_SERVICES: ServiceItem[] = [
       'Bi-weekly progress documentation with photographic logs',
       'Seamless coordination between architects, engineers, and artisans'
     ],
-    image: '/src/assets/images/project_commercial_plaza_1792339539199.jpg',
+    image: '/images/project_commercial_plaza_1792339539199.jpg',
     iconName: 'ClipboardCheck'
   },
   {
@@ -201,7 +201,7 @@ export const COMPANY_SERVICES: ServiceItem[] = [
       'Protects property developers from supplier inflation markup',
       'Essential for bank loan financing and formal investor reporting'
     ],
-    image: '/src/assets/images/service_structural_design_1792339538521.jpg',
+    image: '/images/service_structural_design_1792339538521.jpg',
     iconName: 'Calculator'
   },
   {
@@ -221,7 +221,7 @@ export const COMPANY_SERVICES: ServiceItem[] = [
       'Direct access to vetted plots along prime commercial corridors',
       'Honest advisory on location growth potential and zoning'
     ],
-    image: '/src/assets/images/project_commercial_plaza_1792339539199.jpg',
+    image: '/images/project_commercial_plaza_1792339539199.jpg',
     iconName: 'MapPin'
   },
   {
@@ -241,7 +241,7 @@ export const COMPANY_SERVICES: ServiceItem[] = [
       'Essential data for architectural foundation and grading designs',
       'Pivotal prerequisite for Certificate of Occupancy (C of O) processing'
     ],
-    image: '/src/assets/images/service_civil_engineering_1792339538398.jpg',
+    image: '/images/service_civil_engineering_1792339538398.jpg',
     iconName: 'Compass'
   }
 ];
@@ -258,7 +258,7 @@ export const DEMONSTRATION_PROJECTS: ProjectItem[] = [
       'Conceptual multi-level commercial facility featuring contemporary glass curtain wall, reinforced concrete columns, and ample parking plaza.',
     scope: 'Architectural coordination, structural design, civil drainage, and project management framework.',
     completionTimeline: 'Demonstration Concept',
-    image: '/src/assets/images/project_commercial_plaza_1792339539199.jpg',
+    image: '/images/project_commercial_plaza_1792339539199.jpg',
     isDemonstration: true,
     specs: [
       { label: 'Building Type', value: 'Commercial Arcade & Offices' },
@@ -276,7 +276,7 @@ export const DEMONSTRATION_PROJECTS: ProjectItem[] = [
       'Engineering model for heavy-duty reinforced concrete box culvert and stabilized earthwork grading for flood-resilient regional access.',
     scope: 'Hydraulic drainage calculations, excavation, rebar reinforcement, and structural concrete pouring.',
     completionTimeline: 'Demonstration Concept',
-    image: '/src/assets/images/service_civil_engineering_1792339538398.jpg',
+    image: '/images/service_civil_engineering_1792339538398.jpg',
     isDemonstration: true,
     specs: [
       { label: 'Infrastructure Type', value: 'Box Culvert & Access Road' },
@@ -294,7 +294,7 @@ export const DEMONSTRATION_PROJECTS: ProjectItem[] = [
       'Framed residential duplex and apartment block under methodical construction supervision with precision masonry and quality lintel beams.',
     scope: 'Sub-structure raft foundation, super-structure framing, block laying, and electrical/plumbing rough-in.',
     completionTimeline: 'Demonstration Concept',
-    image: '/src/assets/images/service_building_construction_1792339538812.jpg',
+    image: '/images/service_building_construction_1792339538812.jpg',
     isDemonstration: true,
     specs: [
       { label: 'Unit Count', value: '6 Luxury Apartment Units' },
@@ -312,7 +312,7 @@ export const DEMONSTRATION_PROJECTS: ProjectItem[] = [
       'Comprehensive 3D finite-element structural simulation for high-rise steel and concrete columns, seismic checks, and detailed rebar schedules.',
     scope: 'Structural design review, load distribution modeling, BOQ preparation, and council permit documentation.',
     completionTimeline: 'Demonstration Concept',
-    image: '/src/assets/images/service_structural_design_1792339538521.jpg',
+    image: '/images/service_structural_design_1792339538521.jpg',
     isDemonstration: true,
     specs: [
       { label: 'Analysis Tool', value: 'FEA 3D Structural Modeling' },
@@ -337,7 +337,7 @@ export const DEMONSTRATION_PROPERTIES: PropertyListing[] = [
     size: '1,200 sq. meters (approx. 2 Standard Plots)',
     description:
       'High-visibility commercial frontage suitable for shopping complexes, corporate branch offices, fuel stations, or warehousing. Directly accessible along the paved highway with verified layout beacons.',
-    image: '/src/assets/images/project_commercial_plaza_1792339539199.jpg',
+    image: '/images/project_commercial_plaza_1792339539199.jpg',
     features: [
       'Direct Highway Frontage',
       'Dry & Level Ground',
@@ -362,7 +362,7 @@ export const DEMONSTRATION_PROPERTIES: PropertyListing[] = [
     size: '650 sq. meters building footprint',
     description:
       'Contemporary all-en-suite 4-bedroom detached architectural villa designed for diaspora and executive clients. Features modern parapet roofing, private ante-room, spacious master suite, and perimeter security fencing.',
-    image: '/src/assets/images/service_building_construction_1792339538812.jpg',
+    image: '/images/service_building_construction_1792339538812.jpg',
     features: [
       'All En-Suite Bedrooms',
       'Spacious Kitchen & Pantry',
@@ -385,7 +385,7 @@ export const DEMONSTRATION_PROPERTIES: PropertyListing[] = [
     size: '180 sq. meters usable floor space',
     description:
       'Well-ventilated ground and first-floor commercial units suitable for financial institutions, diagnostic clinics, legal chambers, or logistics hubs. Dedicated power transformer and ample customer parking.',
-    image: '/src/assets/images/hero_construction_modern_1792339537125.jpg',
+    image: '/images/hero_construction_modern_1792339537125.jpg',
     features: [
       'Dedicated Customer Parking',
       '24/7 Security Post',

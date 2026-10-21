@@ -25,7 +25,9 @@ export interface LGAData {
   senatorialZone: 'Delta Central' | 'Delta South' | 'Delta North';
   isHQ?: boolean;
   projectCount: number;
+  projectCountDisplay?: string;
   activeSites: number;
+  activeSitesDisplay?: string;
   soilProfile: string;
   foundationRecommendation: string;
   keyTowns: string[];
@@ -42,8 +44,10 @@ export const DELTA_LGAS: LGAData[] = [
     headquarters: 'Isiokolo',
     senatorialZone: 'Delta Central',
     isHQ: true,
-    projectCount: 28,
-    activeSites: 4,
+    projectCount: 500,
+    projectCountDisplay: '500+ Builds',
+    activeSites: 400,
+    activeSitesDisplay: '400+ Sites Live',
     soilProfile: 'Sandy-Clay Subgrade with High Water Table Margin',
     foundationRecommendation: 'Reinforced Monolithic Raft Foundation with C30 Concrete',
     keyTowns: ['Eku (Firm Base)', 'Abraka', 'Isiokolo', 'Kokori', 'Samagidi', 'Okpara Inland'],
@@ -652,7 +656,7 @@ export const ServiceAreaMap: React.FC<ServiceAreaMapProps> = ({
                     >
                       {lga.isHQ && <span className="text-amber-400">★</span>}
                       <span>{lga.name}</span>
-                      <span className="text-[10px] opacity-75 font-mono">({lga.projectCount})</span>
+                      <span className="text-[10px] opacity-75 font-mono">({lga.projectCountDisplay ? '500+' : lga.projectCount})</span>
                     </button>
                   );
                 })}
@@ -673,7 +677,7 @@ export const ServiceAreaMap: React.FC<ServiceAreaMapProps> = ({
 
             {/* LGA Title & Zone */}
             <div className="mb-6">
-              <div className="flex items-center gap-2 text-xs font-bold uppercase text-[#00B4D8] tracking-wider mb-1">
+              <div className="flex items-center gap-2 text-xs font-bold uppercase text-[#0B2545] dark:text-[#00B4D8] tracking-wider mb-1">
                 <span>{activeLGA.senatorialZone}</span>
                 <span aria-hidden="true">·</span>
                 <span>HQ: {activeLGA.headquarters}</span>
@@ -688,14 +692,14 @@ export const ServiceAreaMap: React.FC<ServiceAreaMapProps> = ({
               <div className="border-r border-slate-700/80 pr-3">
                 <span className="text-xs text-slate-400 block font-medium">Completed Projects:</span>
                 <span className="text-xl font-black text-white font-['Plus_Jakarta_Sans']">
-                  {activeLGA.projectCount} Builds
+                  {activeLGA.projectCountDisplay || `${activeLGA.projectCount} Builds`}
                 </span>
               </div>
               <div className="pl-2">
                 <span className="text-xs text-slate-400 block font-medium">Active Construction Sites:</span>
                 <span className="text-xl font-black text-[#F59E0B] font-['Plus_Jakarta_Sans'] flex items-center gap-1.5">
                   <span className="w-2 h-2 rounded-full bg-[#F59E0B] animate-pulse" />
-                  {activeLGA.activeSites} Sites Live
+                  {activeLGA.activeSitesDisplay || `${activeLGA.activeSites} Sites Live`}
                 </span>
               </div>
             </div>

@@ -31,7 +31,7 @@ export const ArchitecturalAIStudioModal: React.FC<ArchitecturalAIStudioModalProp
   );
   const [aspectRatio, setAspectRatio] = useState<'16:9' | '4:3' | '1:1' | '9:16'>('4:3');
   const [selectedBaseImage, setSelectedBaseImage] = useState<string>(
-    '/src/assets/images/service_building_construction_1792339538812.jpg'
+    '/images/service_building_construction_1792339538812.jpg'
   );
   const [customUploadImage, setCustomUploadImage] = useState<string>('');
   const [editInstruction, setEditInstruction] = useState(
@@ -46,19 +46,19 @@ export const ArchitecturalAIStudioModal: React.FC<ArchitecturalAIStudioModalProp
   const PRESET_BASE_IMAGES = [
     {
       label: 'Residential Construction Site',
-      url: '/src/assets/images/service_building_construction_1792339538812.jpg',
+      url: '/images/service_building_construction_1792339538812.jpg',
     },
     {
       label: 'Commercial Plaza & Atrium',
-      url: '/src/assets/images/project_commercial_plaza_1792339539199.jpg',
+      url: '/images/project_commercial_plaza_1792339539199.jpg',
     },
     {
       label: 'High-Rise Architectural Frame',
-      url: '/src/assets/images/hero_construction_modern_1792339537125.jpg',
+      url: '/images/hero_construction_modern_1792339537125.jpg',
     },
     {
       label: 'Civil Earthworks Infrastructure',
-      url: '/src/assets/images/service_civil_engineering_1792339538398.jpg',
+      url: '/images/service_civil_engineering_1792339538398.jpg',
     },
   ];
 

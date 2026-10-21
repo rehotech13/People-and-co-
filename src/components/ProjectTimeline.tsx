@@ -51,7 +51,7 @@ const TIMELINE_STAGES: TimelineStage[] = [
     keyDeliverables: [
       'Comprehensive Soil Geotechnical Test Report',
       'Architectural 3D Renderings & Working Drawings',
-      'COREN-Stamped Structural Engineering Calculation Sheets',
+      'Certified Structural Engineering Calculation Sheets',
       'Statutory Town Planning & Building Approval Permits',
       'Itemized Bill of Quantities (BOQ) with Material Schedule',
     ],

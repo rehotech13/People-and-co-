@@ -93,6 +93,14 @@ export const Footer: React.FC<FooterProps> = ({
               </li>
               <li>
                 <button
+                  onClick={() => onNavigate('staff')}
+                  className="hover:text-white transition-colors text-left cursor-pointer text-[#00B4D8]"
+                >
+                  Principal Technical Staff
+                </button>
+              </li>
+              <li>
+                <button
                   onClick={() => onNavigate('services')}
                   className="hover:text-white transition-colors text-left cursor-pointer"
                 >
@@ -207,7 +215,7 @@ export const Footer: React.FC<FooterProps> = ({
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <div>
-            © {new Date().getFullYear()} {COMPANY_CONFIG.name}. All rights reserved. Registered operating presence in Delta State, Nigeria.
+            {COMPANY_CONFIG.name}. All rights reserved © {new Date().getFullYear()}. Registered operating presence in Delta State, Nigeria.
           </div>
 
           <div className="flex items-center gap-6">

@@ -3,6 +3,7 @@ import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { CompanyStats } from './components/CompanyStats';
 import { AboutSection } from './components/AboutSection';
+import { StaffSection } from './components/StaffSection';
 import { ServicesSection } from './components/ServicesSection';
 import { ServiceAreaMap } from './components/ServiceAreaMap';
 import { PortfolioSection } from './components/PortfolioSection';
@@ -105,6 +106,12 @@ export default function App() {
     scrollToSection('contact');
   };
 
+  const handleConsultStaff = (staffName: string, position: string) => {
+    setPrefilledService('Construction Project Management');
+    setPrefilledSubject(`Technical Consultation with ${staffName} (${position})`);
+    scrollToSection('contact');
+  };
+
   const handleRequestBOQFromEstimator = (details: {
     projectType: string;
     totalAreaSqM: number;
@@ -146,6 +153,9 @@ export default function App() {
 
         {/* About Section */}
         <AboutSection />
+
+        {/* Principal Engineering & Technical Staff Section */}
+        <StaffSection onConsultStaff={handleConsultStaff} />
 
         {/* Core Services Section */}
         <ServicesSection onRequestService={handleRequestService} />

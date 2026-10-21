@@ -27,6 +27,7 @@ interface Testimonial {
   content: string;
   verified: boolean;
   highlight: string;
+  avatarUrl: string;
 }
 
 const INITIAL_TESTIMONIALS: Testimonial[] = [
@@ -43,6 +44,7 @@ const INITIAL_TESTIMONIALS: Testimonial[] = [
     content:
       'Building in Nigeria while living in the UK used to give me severe anxiety after hearing past horror stories from relatives. People and Co Construction Firm completely transformed that experience. Their Live Project Tracker allowed me to inspect concrete cure certifications, drone photos, and milestone sign-offs weekly from London. Delivered ahead of time and on budget.',
     verified: true,
+    avatarUrl: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=256&h=256&q=80',
   },
   {
     id: 't-2',
@@ -57,6 +59,7 @@ const INITIAL_TESTIMONIALS: Testimonial[] = [
     content:
       'People and Co Construction Firm managed our structural framing and heavy machinery foundation with top-tier civil engineering precision. Their BOQ estimation was spot-on with zero hidden cost surprises, and their soil stabilization in the delta wetland terrain was handled impeccably.',
     verified: true,
+    avatarUrl: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=256&h=256&q=80',
   },
   {
     id: 't-3',
@@ -71,6 +74,7 @@ const INITIAL_TESTIMONIALS: Testimonial[] = [
     content:
       'Their structural engineering standards meet international building codes. The raft foundation designed and poured by their resident engineers gave us absolute peace of mind given Warri’s demanding coastal water table. They are our go-to contractor for commercial developments.',
     verified: true,
+    avatarUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=256&h=256&q=80',
   },
   {
     id: 't-4',
@@ -85,6 +89,7 @@ const INITIAL_TESTIMONIALS: Testimonial[] = [
     content:
       'As a consulting architect, it is rare to find a Nigerian contractor who respects architectural working drawings and structural rebar specifications down to the millimeter without cutting corners. PACCF executes with absolute integrity and technical discipline.',
     verified: true,
+    avatarUrl: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=256&h=256&q=80',
   },
   {
     id: 't-5',
@@ -99,6 +104,7 @@ const INITIAL_TESTIMONIALS: Testimonial[] = [
     content:
       'Honest billing, high density hollow sandcrete blocks, and standard German floor reinforcement. The PACCF site supervisor was on site daily ensuring our drainage gradient and roof trusses were completed without faults. Outstanding craftsmanship!',
     verified: true,
+    avatarUrl: 'https://images.unsplash.com/photo-1580894732444-8ecded7900cd?auto=format&fit=crop&w=256&h=256&q=80',
   },
   {
     id: 't-6',
@@ -113,6 +119,7 @@ const INITIAL_TESTIMONIALS: Testimonial[] = [
     content:
       'From foundation footing to long-span roof truss installation, People and Co Construction Firm demonstrated genuine integrity, punctuality, and engineering excellence. Their team kept our building committee informed at every single milestone.',
     verified: true,
+    avatarUrl: 'https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?auto=format&fit=crop&w=256&h=256&q=80',
   },
   {
     id: 't-7',
@@ -127,6 +134,7 @@ const INITIAL_TESTIMONIALS: Testimonial[] = [
     content:
       'Investing in real estate back home in Nigeria while based in Texas requires total financial trust. People and Co Construction Firm provided transparent milestone billing, batch-tested concrete crush reports, and weekly drone inspections. Not a single bag of cement or rod was unaccounted for, and the rental yield valuation exceeded our projections.',
     verified: true,
+    avatarUrl: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=256&h=256&q=80',
   },
 ];
 
@@ -299,12 +307,35 @@ export const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({
 
               {/* Author & Project Footer */}
               <div className="pt-4 border-t border-slate-100 mt-auto">
-                <div className="flex items-start justify-between gap-2">
-                  <div>
-                    <h3 className="text-sm font-bold text-[#0B2545] font-['Plus_Jakarta_Sans']">
+                <div className="flex items-center gap-3">
+                  {/* Client Portrait Photo Beside Name */}
+                  <div className="relative w-11 h-11 rounded-full overflow-hidden shrink-0 border border-slate-200 shadow-xs ring-2 ring-[#00B4D8]/20 group-hover:ring-[#00B4D8]/60 transition-all bg-slate-100">
+                    <img
+                      src={item.avatarUrl}
+                      alt={item.clientName}
+                      referrerPolicy="no-referrer"
+                      className="w-full h-full object-cover object-center"
+                      onError={(e) => {
+                        const target = e.currentTarget;
+                        target.style.display = 'none';
+                        if (target.parentElement) {
+                          const initials = item.clientName
+                            .split(' ')
+                            .map((n: string) => n.replace(/[^a-zA-Z]/g, '')[0])
+                            .filter(Boolean)
+                            .slice(0, 2)
+                            .join('');
+                          target.parentElement.innerHTML = `<div class="w-full h-full bg-[#0B2545] text-white flex items-center justify-center font-bold text-xs">${initials || 'CL'}</div>`;
+                        }
+                      }}
+                    />
+                  </div>
+
+                  <div className="min-w-0 flex-1">
+                    <h3 className="text-sm font-bold text-[#0B2545] font-['Plus_Jakarta_Sans'] group-hover:text-[#00B4D8] transition-colors truncate">
                       {item.clientName}
                     </h3>
-                    <p className="text-xs text-slate-500 font-medium">
+                    <p className="text-xs text-slate-500 font-medium truncate">
                       {item.role}
                     </p>
                   </div>

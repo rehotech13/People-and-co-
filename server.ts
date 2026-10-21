@@ -121,7 +121,7 @@ const INITIAL_PROJECT_TRACKERS: ProjectTrackerRecord[] = [
     currentPhase: 'Phase 4: First-Floor Decking & Penthouse Superstructure',
     status: 'on_track',
     lastInspectionDate: '16 Apr 2026',
-    siteHeroImage: '/src/assets/images/service_building_construction_1792339538812.jpg',
+    siteHeroImage: '/images/service_building_construction_1792339538812.jpg',
     milestones: [
       {
         id: 'm-1',
@@ -235,7 +235,7 @@ const INITIAL_PROJECT_TRACKERS: ProjectTrackerRecord[] = [
     currentPhase: 'Phase 6: Glass Curtain Wall Glazing & Exterior Interlock',
     status: 'ahead_of_schedule',
     lastInspectionDate: '15 Apr 2026',
-    siteHeroImage: '/src/assets/images/project_commercial_plaza_1792339539199.jpg',
+    siteHeroImage: '/images/project_commercial_plaza_1792339539199.jpg',
     milestones: [
       {
         id: 'm-201',
@@ -312,7 +312,7 @@ const INITIAL_PROJECT_TRACKERS: ProjectTrackerRecord[] = [
     currentPhase: 'Phase 3: Culvert Wing Walls & Deck Slab Shuttering',
     status: 'on_track',
     lastInspectionDate: '14 Apr 2026',
-    siteHeroImage: '/src/assets/images/service_civil_engineering_1792339538398.jpg',
+    siteHeroImage: '/images/service_civil_engineering_1792339538398.jpg',
     milestones: [
       {
         id: 'm-301',
@@ -407,10 +407,10 @@ const INITIAL_PROPERTIES: PropertyRecord[] = [
     priceRaw: 28000000,
     size: '1,200 sq. meters (approx. 2 Standard Plots)',
     description: 'High-visibility commercial frontage suitable for shopping complexes, corporate branch offices, fuel stations, or warehousing. Directly accessible along the paved highway with verified layout beacons.',
-    image: '/src/assets/images/project_commercial_plaza_1792339539199.jpg',
+    image: '/images/project_commercial_plaza_1792339539199.jpg',
     images: [
-      '/src/assets/images/project_commercial_plaza_1792339539199.jpg',
-      '/src/assets/images/service_civil_engineering_1792339538398.jpg'
+      '/images/project_commercial_plaza_1792339539199.jpg',
+      '/images/service_civil_engineering_1792339538398.jpg'
     ],
     features: ['Direct Highway Frontage', 'Dry & Level Ground', 'Survey Plan Ready', 'Free from Legal Encumbrance', 'Fast-Growing Commercial Zone'],
     isDemonstration: true,
@@ -430,10 +430,10 @@ const INITIAL_PROPERTIES: PropertyRecord[] = [
     bathrooms: 5,
     size: '650 sq. meters building footprint',
     description: 'Contemporary all-en-suite 4-bedroom detached architectural villa designed for diaspora and executive clients. Features modern parapet roofing, private ante-room, spacious master suite, and perimeter security fencing.',
-    image: '/src/assets/images/service_building_construction_1792339538812.jpg',
+    image: '/images/service_building_construction_1792339538812.jpg',
     images: [
-      '/src/assets/images/service_building_construction_1792339538812.jpg',
-      '/src/assets/images/hero_construction_modern_1792339537125.jpg'
+      '/images/service_building_construction_1792339538812.jpg',
+      '/images/hero_construction_modern_1792339537125.jpg'
     ],
     features: ['All En-Suite Bedrooms', 'Spacious Kitchen & Pantry', 'Reinforced Raft Foundation', 'Interlocked Compound & Borehole', 'Pre-installed Inverter Conduit'],
     isDemonstration: true,
@@ -451,10 +451,10 @@ const INITIAL_PROPERTIES: PropertyRecord[] = [
     priceRaw: 2500000,
     size: '180 sq. meters usable floor space',
     description: 'Well-ventilated ground and first-floor commercial units suitable for financial institutions, diagnostic clinics, legal chambers, or logistics hubs. Dedicated power transformer and ample customer parking.',
-    image: '/src/assets/images/hero_construction_modern_1792339537125.jpg',
+    image: '/images/hero_construction_modern_1792339537125.jpg',
     images: [
-      '/src/assets/images/hero_construction_modern_1792339537125.jpg',
-      '/src/assets/images/project_commercial_plaza_1792339539199.jpg'
+      '/images/hero_construction_modern_1792339537125.jpg',
+      '/images/project_commercial_plaza_1792339539199.jpg'
     ],
     features: ['Dedicated Customer Parking', '24/7 Security Post', 'High-speed Fiber Backbone Conduit', 'Constant Water Supply', 'Direct Road Access'],
     isDemonstration: true,
@@ -474,10 +474,10 @@ const INITIAL_PROPERTIES: PropertyRecord[] = [
     bathrooms: 4,
     size: '900 sq. meters compound',
     description: 'Beautifully finished twin semi-detached bungalows with separate compound gates, stamped concrete paving, pop ceilings, and prepaid digital meters.',
-    image: '/src/assets/images/service_structural_design_1792339538521.jpg',
+    image: '/images/service_structural_design_1792339538521.jpg',
     images: [
-      '/src/assets/images/service_structural_design_1792339538521.jpg',
-      '/src/assets/images/service_building_construction_1792339538812.jpg'
+      '/images/service_structural_design_1792339538521.jpg',
+      '/images/service_building_construction_1792339538812.jpg'
     ],
     features: ['POP Ceilings Throughout', 'Dedicated Borehole & Overhead Tanks', 'Electric Fence Wire', 'Ample 6-Car Parking', 'Deed of Conveyance'],
     isDemonstration: true,
@@ -881,7 +881,7 @@ app.post('/api/properties', (req: Request, res: Response) => {
 
   const primaryImage = image && typeof image === 'string' && image.trim().length > 0
     ? image.trim()
-    : '/src/assets/images/project_commercial_plaza_1792339539199.jpg';
+    : '/images/project_commercial_plaza_1792339539199.jpg';
 
   const galleryImages = Array.isArray(images) && images.length > 0
     ? images
@@ -1099,7 +1099,7 @@ app.post('/api/project-trackers', (req: Request, res: Response) => {
     currentPhase: currentPhase || 'Phase 1: Mobilization & Substructure',
     status: status || 'on_track',
     lastInspectionDate: new Date().toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' }),
-    siteHeroImage: siteHeroImage || '/src/assets/images/service_building_construction_1792339538812.jpg',
+    siteHeroImage: siteHeroImage || '/images/service_building_construction_1792339538812.jpg',
     milestones: Array.isArray(milestones) && milestones.length > 0 ? milestones : defaultMilestones,
     recentSiteUpdates: initialUpdates,
   };

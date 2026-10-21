@@ -16,23 +16,23 @@ export const AddPropertyModal: React.FC<AddPropertyModalProps> = ({
   const PRESET_IMAGES = [
     {
       label: 'Commercial Plaza / Office',
-      url: '/src/assets/images/project_commercial_plaza_1792339539199.jpg',
+      url: '/images/project_commercial_plaza_1792339539199.jpg',
     },
     {
       label: 'Residential Construction / Duplex',
-      url: '/src/assets/images/service_building_construction_1792339538812.jpg',
+      url: '/images/service_building_construction_1792339538812.jpg',
     },
     {
       label: 'Contemporary Modern Facade & Crane',
-      url: '/src/assets/images/hero_construction_modern_1792339537125.jpg',
+      url: '/images/hero_construction_modern_1792339537125.jpg',
     },
     {
       label: 'Civil Engineering / Land Grading Site',
-      url: '/src/assets/images/service_civil_engineering_1792339538398.jpg',
+      url: '/images/service_civil_engineering_1792339538398.jpg',
     },
     {
       label: 'Structural Blueprint & Engineering Studio',
-      url: '/src/assets/images/service_structural_design_1792339538521.jpg',
+      url: '/images/service_structural_design_1792339538521.jpg',
     },
   ];
 

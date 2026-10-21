@@ -655,6 +655,14 @@ export const ProjectStatusTracker: React.FC<ProjectStatusTrackerProps> = ({
                         src={currentTracker.siteHeroImage}
                         alt={currentTracker.projectTitle}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        onError={(e) => {
+                          const target = e.currentTarget;
+                          if (target.src.includes('/src/assets/images/')) {
+                            target.src = target.src.replace('/src/assets/images/', '/images/');
+                          } else if (!target.src.includes('unsplash.com')) {
+                            target.src = 'https://images.unsplash.com/photo-1541888946425-d0fbb18086f6?auto=format&fit=crop&w=800&q=80';
+                          }
+                        }}
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-4">
                         <span className="text-white text-xs font-semibold flex items-center gap-1.5">

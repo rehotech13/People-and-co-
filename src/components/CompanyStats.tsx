@@ -57,12 +57,12 @@ const STATS_DATA: StatItem[] = [
     headline: 'Multi-Disciplinary Technical Team',
     category: 'Human Capital',
     description:
-      'Registered COREN engineers, NIA architects, quantity surveyors, HSE officers, and certified master craftsmen.',
+      'Registered professional engineers, NIA architects, quantity surveyors, HSE officers, and certified master craftsmen.',
     icon: HardHat,
     accentColor: '#F59E0B',
-    badgeText: 'COREN & NIA Certified',
+    badgeText: 'Certified & Licensed',
     breakdown: [
-      { label: 'COREN Civil/Structural Engineers', count: '14 Specialists', detail: 'Registered professional engineering cadre' },
+      { label: 'Certified Civil/Structural Engineers', count: '14 Specialists', detail: 'Registered professional engineering cadre' },
       { label: 'NIA Registered Architects', count: '8 Designers', detail: '3D spatial, BIM & sustainable architectural design' },
       { label: 'Quantity Surveyors & QA/QC', count: '12 Inspectors', detail: 'Accurate BOQ preparation & concrete strength testing' },
       { label: 'Site Superintendents & HSE', count: '18+ On-ground', detail: 'Strict zero-accident protocol enforcement' },

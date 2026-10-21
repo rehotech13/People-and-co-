@@ -46,7 +46,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     lga: 'Ethiope East LGA, Delta State',
     timeline: 'Completed Feb 2026',
     imageUrl: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80',
-    fallbackUrl: '/src/assets/images/hero_construction_modern_1792339537125.jpg',
+    fallbackUrl: '/images/hero_construction_modern_1792339537125.jpg',
     engineeringSpecs: [
       'Reinforced Raft Foundation on Sandy-Clay Subgrade',
       'High-Tensile TMT 16mm/12mm Rebar Decking',
@@ -67,7 +67,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     lga: 'Sapele LGA, Delta State',
     timeline: 'Inspection Certified Jan 2026',
     imageUrl: 'https://images.unsplash.com/photo-1541888946425-d0fbb18086f6?auto=format&fit=crop&w=1200&q=80',
-    fallbackUrl: '/src/assets/images/service_structural_design_1792339538521.jpg',
+    fallbackUrl: '/images/service_structural_design_1792339538521.jpg',
     engineeringSpecs: [
       'C30 Ready-Mix Concrete with 28-Day Cube Compression Testing',
       'Dual Mat Steel Rebar Grid with 200mm Spacing',
@@ -88,7 +88,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     lga: 'Warri, Delta State',
     timeline: 'Completed Nov 2025',
     imageUrl: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80',
-    fallbackUrl: '/src/assets/images/project_commercial_plaza_1792339539199.jpg',
+    fallbackUrl: '/images/project_commercial_plaza_1792339539199.jpg',
     engineeringSpecs: [
       'Engineered Reinforced Concrete Moment Frame',
       'Double-Glazed Reflective Curtain Wall Facade',
@@ -109,7 +109,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     lga: 'Asaba, Delta State',
     timeline: 'Phase 4 In Progress',
     imageUrl: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80',
-    fallbackUrl: '/src/assets/images/service_civil_engineering_1792339538398.jpg',
+    fallbackUrl: '/images/service_civil_engineering_1792339538398.jpg',
     engineeringSpecs: [
       '18mm Marine Plywood Shuttering with Acrow Steel Props',
       'Cantilever Balcony Rebar Ties with High Shear Capacity',
@@ -130,7 +130,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     lga: 'Abraka, Delta State',
     timeline: 'Completed Dec 2025',
     imageUrl: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80',
-    fallbackUrl: '/src/assets/images/service_building_construction_1792339538812.jpg',
+    fallbackUrl: '/images/service_building_construction_1792339538812.jpg',
     engineeringSpecs: [
       'Vibrated 9-inch Load-Bearing Sandcrete Blockwork',
       'Perimeter Retaining Wall & Integrated U-Drain Channel',
@@ -151,7 +151,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     lga: 'Ughelli North LGA, Delta State',
     timeline: 'Milestone Certified Jan 2026',
     imageUrl: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1200&q=80',
-    fallbackUrl: '/src/assets/images/service_structural_design_1792339538521.jpg',
+    fallbackUrl: '/images/service_structural_design_1792339538521.jpg',
     engineeringSpecs: [
       'Anti-Rust Primed Structural Angle Iron Trusses',
       'High-Tensile Gusset Plate Welding with Non-Destructive Test',
@@ -172,7 +172,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     lga: 'Eku, Ethiope East LGA, Delta State',
     timeline: 'Completed Jan 2026',
     imageUrl: 'https://images.unsplash.com/photo-1574958269340-fa927304f207?auto=format&fit=crop&w=1200&q=80',
-    fallbackUrl: '/src/assets/images/hero_construction_modern_1792339537125.jpg',
+    fallbackUrl: '/images/hero_construction_modern_1792339537125.jpg',
     engineeringSpecs: [
       '250mm Reinforced Concrete Industrial Floor Slab',
       'Heavy Articulated Truck Maneuvering Apron',
@@ -193,7 +193,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     lga: 'Oghara, Delta State',
     timeline: 'Phase 3 In Progress',
     imageUrl: 'https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?auto=format&fit=crop&w=1200&q=80',
-    fallbackUrl: '/src/assets/images/service_building_construction_1792339538812.jpg',
+    fallbackUrl: '/images/service_building_construction_1792339538812.jpg',
     engineeringSpecs: [
       'Continuous Polythene Damp-Proof Barrier',
       'BRC Mesh Fabric Reinforcement Grade A142',
