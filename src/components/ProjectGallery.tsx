@@ -45,8 +45,8 @@ const GALLERY_ITEMS: GalleryItem[] = [
     location: 'Along New Eku-Abraka Expressway',
     lga: 'Ethiope East LGA, Delta State',
     timeline: 'Completed Feb 2026',
-    imageUrl: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80',
-    fallbackUrl: '/images/hero_construction_modern_1792339537125.jpg',
+    imageUrl: '/images/executive_smart_villa.jpg',
+    fallbackUrl: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80',
     engineeringSpecs: [
       'Reinforced Raft Foundation on Sandy-Clay Subgrade',
       'High-Tensile TMT 16mm/12mm Rebar Decking',

@@ -42,7 +42,7 @@ const INITIAL_LIVE_TRACKERS: ProjectTracker[] = [
     currentPhase: 'Phase 4: First-Floor Decking & Penthouse Superstructure',
     status: 'on_track',
     lastInspectionDate: '16 Apr 2026',
-    siteHeroImage: '/images/service_building_construction_1792339538812.jpg',
+    siteHeroImage: '/images/executive_smart_villa.jpg',
     milestones: [
       {
         id: 'm-1',
