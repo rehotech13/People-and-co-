@@ -113,7 +113,7 @@ const INITIAL_PROJECT_TRACKERS: ProjectTrackerRecord[] = [
     projectTitle: 'Executive 5-Bedroom Smart Villa with Penthouse',
     projectType: 'Turnkey Residential Construction',
     location: 'Along New Eku-Abraka Expressway, Delta State',
-    siteEngineer: 'Engr. Kenneth Efe (Lead Structural Specialist)',
+    siteEngineer: 'Engr. Justice Akpochimora (Principal Lead Structural Engineer)',
     contractor: 'People and Co Construction Firm',
     startDate: '15 Jan 2026',
     estimatedCompletionDate: '30 Jul 2026',

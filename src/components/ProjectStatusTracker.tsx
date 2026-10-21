@@ -26,6 +26,258 @@ import {
 import { ProjectTracker, ProjectMilestone } from '../types';
 import { COMPANY_CONFIG } from '../config/company';
 
+const INITIAL_LIVE_TRACKERS: ProjectTracker[] = [
+  {
+    id: 'trk-001',
+    trackingCode: 'PACCF-PRJ-2026-001',
+    clientName: 'Chief & Mrs. Ovie',
+    projectTitle: 'Executive 5-Bedroom Smart Villa with Penthouse',
+    projectType: 'Turnkey Residential Construction',
+    location: 'Along New Eku-Abraka Expressway, Delta State',
+    siteEngineer: 'Engr. Justice Akpochimora (Principal Lead Structural Engineer)',
+    contractor: 'People and Co Construction Firm',
+    startDate: '15 Jan 2026',
+    estimatedCompletionDate: '30 Jul 2026',
+    overallProgressPercent: 68,
+    currentPhase: 'Phase 4: First-Floor Decking & Penthouse Superstructure',
+    status: 'on_track',
+    lastInspectionDate: '16 Apr 2026',
+    siteHeroImage: '/images/service_building_construction_1792339538812.jpg',
+    milestones: [
+      {
+        id: 'm-1',
+        phaseNumber: 1,
+        title: 'Site Topography, Boundary Beacons & Soil Bearing Test',
+        description: 'Cadastral coordinate verification, topsoil scraping, and penetrometer bearing capacity test.',
+        targetDate: '22 Jan 2026',
+        completedDate: '20 Jan 2026',
+        status: 'completed',
+        engineerNotes: 'Soil bearing capacity certified at 180 kN/m². Optimal for reinforced raft foundation.',
+        verificationBadge: 'Site Soil Certificate Approved',
+      },
+      {
+        id: 'm-2',
+        phaseNumber: 2,
+        title: 'Substructure Excavation & Heavy Raft Foundation Casting',
+        description: 'Excavation of foundation trenches, steel reinforcement cage placement, and high-strength concrete pour.',
+        targetDate: '18 Feb 2026',
+        completedDate: '15 Feb 2026',
+        status: 'completed',
+        engineerNotes: 'Reinforced raft foundation cast with C30 ready-mix concrete. Waterproof membrane installed.',
+        verificationBadge: 'Foundation Inspection Passed',
+      },
+      {
+        id: 'm-3',
+        phaseNumber: 3,
+        title: 'DPC German Floor & Ground Floor Load-Bearing Masonry',
+        description: 'Damp-proof course casting, plumbing pipe sleeves, and certified vibrated hollow block laying.',
+        targetDate: '12 Mar 2026',
+        completedDate: '10 Mar 2026',
+        status: 'completed',
+        engineerNotes: 'Block alignment inspected. Quality sandcrete mix used with zero deviation.',
+        verificationBadge: 'DPC Structural Gate Passed',
+      },
+      {
+        id: 'm-4',
+        phaseNumber: 4,
+        title: 'First Floor Suspended Slab Casting & Formwork',
+        description: 'Marine plywood formwork, 16mm/12mm high-yield tensile rebar placement, and slab casting.',
+        targetDate: '05 Apr 2026',
+        completedDate: '04 Apr 2026',
+        status: 'completed',
+        engineerNotes: 'Concrete cube crush test passed at 32 N/mm² after 14-day water ponding curing.',
+        verificationBadge: 'Decking Structural Approval',
+      },
+      {
+        id: 'm-5',
+        phaseNumber: 5,
+        title: 'Penthouse Superstructure & Overhead Ring Beams',
+        description: 'Upper floor wall masonry, reinforced lintel ties, and overhead ring beam cage binding.',
+        targetDate: '10 May 2026',
+        status: 'in_progress',
+        engineerNotes: 'Reinforcement for ring beam currently 70% placed. Awaiting final formwork inspection.',
+      },
+      {
+        id: 'm-6',
+        phaseNumber: 6,
+        title: 'Structural Steel Roof Trusses & Parapet Weatherproofing',
+        description: 'Fabrication of steel rafters, aluminium stone-coated roofing sheets, and parapet concrete coping.',
+        targetDate: '28 May 2026',
+        status: 'pending',
+        engineerNotes: 'Roof timber and stone-coated tiles already mobilized on site storage.',
+      },
+      {
+        id: 'm-7',
+        phaseNumber: 7,
+        title: 'Mechanical, Electrical & Plumbing (MEP) Conduiting',
+        description: 'Concealed PVC wiring conduits, inverter AC piping, and PPR water supply piping.',
+        targetDate: '20 Jun 2026',
+        status: 'pending',
+      },
+      {
+        id: 'm-8',
+        phaseNumber: 8,
+        title: 'Interior Plastering, Porcelain Tiling, Painting & Handover',
+        description: 'Screeding, POP ceiling installation, Spanish porcelain floor tiling, and final client walkthrough.',
+        targetDate: '30 Jul 2026',
+        status: 'pending',
+      },
+    ],
+    recentSiteUpdates: [
+      {
+        date: '16 Apr 2026',
+        note: 'Penthouse block work passed elevation level 2.8m. Ring beam rebar fabrication ongoing with high-yield 16mm rods.',
+        author: 'Engr. Justice Akpochimora',
+      },
+      {
+        date: '04 Apr 2026',
+        note: 'First-floor concrete pour completed seamlessly. 14-day ponding curing initiated with dedicated site water pumps.',
+        author: 'Site Supervisor Johnson',
+      },
+    ],
+  },
+  {
+    id: 'trk-002',
+    trackingCode: 'PACCF-PRJ-2026-002',
+    clientName: 'Delta Commercial Holdings Ltd',
+    projectTitle: 'Advocate Commercial Shopping Plaza (4-Stories)',
+    projectType: 'Commercial Building & Civil Infrastructure',
+    location: 'Eku Central Business Strip, Ethiope East LGA',
+    siteEngineer: 'Arc. Mudiaga Ogwa / Project Lead',
+    contractor: 'People and Co Construction Firm',
+    startDate: '10 Sep 2025',
+    estimatedCompletionDate: '25 May 2026',
+    overallProgressPercent: 86,
+    currentPhase: 'Phase 6: Glass Curtain Wall Glazing & Exterior Interlock',
+    status: 'ahead_of_schedule',
+    lastInspectionDate: '15 Apr 2026',
+    siteHeroImage: '/images/project_commercial_plaza_1792339539199.jpg',
+    milestones: [
+      {
+        id: 'm-201',
+        phaseNumber: 1,
+        title: 'Geotechnical Soil Investigation & Deep Piling Footing',
+        description: 'Soil boring test and reinforced concrete pad footing casting.',
+        targetDate: '15 Oct 2025',
+        completedDate: '10 Oct 2025',
+        status: 'completed',
+        verificationBadge: 'Geotechnical Cert Validated',
+      },
+      {
+        id: 'm-202',
+        phaseNumber: 2,
+        title: 'Multi-Floor Column Casting & Suspended Slabs (Floors 1-4)',
+        description: 'Heavy commercial framing and high-load decking.',
+        targetDate: '15 Jan 2026',
+        completedDate: '08 Jan 2026',
+        status: 'completed',
+        verificationBadge: 'Multi-Story Frame Passed',
+      },
+      {
+        id: 'm-203',
+        phaseNumber: 3,
+        title: 'Roof Decking, Parapet & Integrated Rainwater Drainage',
+        description: 'Reinforced concrete roof slab and perimeter concealed box gutters.',
+        targetDate: '20 Feb 2026',
+        completedDate: '18 Feb 2026',
+        status: 'completed',
+      },
+      {
+        id: 'm-204',
+        phaseNumber: 4,
+        title: 'Commercial Glazing, Aluminium Curtain Walls & MEP',
+        description: 'Double-glazed reflective curtain wall and commercial electrical transformer room.',
+        targetDate: '30 Apr 2026',
+        status: 'in_progress',
+        engineerNotes: 'Curtain wall panels 85% installed. Dedicated 33KVA transformer already placed.',
+      },
+      {
+        id: 'm-205',
+        phaseNumber: 5,
+        title: 'Compound Interlocking Paving, Landscaping & Handover',
+        description: 'Heavy-duty 80mm interlock paving for customer parking and security boom gate.',
+        targetDate: '25 May 2026',
+        status: 'pending',
+      },
+    ],
+    recentSiteUpdates: [
+      {
+        date: '15 Apr 2026',
+        note: 'Curtain wall reflective glass installed on levels 1 to 3. Interior electrical wiring 90% completed.',
+        author: 'Arc. Mudiaga Ogwa',
+      },
+      {
+        date: '28 Mar 2026',
+        note: 'Exterior perimeter drainage connection to municipal canal completed and pressure tested.',
+        author: 'Arc. Mudiaga Ogwa',
+      },
+    ],
+  },
+  {
+    id: 'trk-003',
+    trackingCode: 'PACCF-PRJ-2026-003',
+    clientName: 'Ethiope East Regional Works Committee',
+    projectTitle: 'Reinforced Concrete Dual Box Culvert & Flood Relief Channel',
+    projectType: 'Civil Infrastructure Engineering',
+    location: 'Ethiope East LGA Feeder Road Corridor',
+    siteEngineer: 'QS Oghenekaro Daniel / Resident Project Manager',
+    contractor: 'People and Co Construction Firm',
+    startDate: '20 Feb 2026',
+    estimatedCompletionDate: '20 Jun 2026',
+    overallProgressPercent: 48,
+    currentPhase: 'Phase 3: Culvert Wing Walls & Deck Slab Shuttering',
+    status: 'on_track',
+    lastInspectionDate: '14 Apr 2026',
+    siteHeroImage: '/images/service_civil_engineering_1792339538398.jpg',
+    milestones: [
+      {
+        id: 'm-301',
+        phaseNumber: 1,
+        title: 'Hydraulic Survey, Stream Diversion & Soil Dewatering',
+        description: 'Stream diversion channel, dewatering pumps installation, and soft silt removal.',
+        targetDate: '08 Mar 2026',
+        completedDate: '05 Mar 2026',
+        status: 'completed',
+        verificationBadge: 'Hydraulic Spec Approved',
+      },
+      {
+        id: 'm-302',
+        phaseNumber: 2,
+        title: 'Lean Concrete Blinding & Invert Slab Concrete Casting',
+        description: 'Hardcore filling, 75mm blinding, 20mm rebar mat placement, and 300mm invert slab pour.',
+        targetDate: '28 Mar 2026',
+        completedDate: '26 Mar 2026',
+        status: 'completed',
+        verificationBadge: 'Foundation Sump Certified',
+      },
+      {
+        id: 'm-303',
+        phaseNumber: 3,
+        title: 'Culvert Abutment Walls & Suspended Deck Slab Rebar',
+        description: 'Vertical wall reinforcement, wing walls shuttering, and top deck slab rebar binding.',
+        targetDate: '30 Apr 2026',
+        status: 'in_progress',
+        engineerNotes: 'Wall rebar tying completed. Ready for shuttering and concrete vibrator inspection.',
+      },
+      {
+        id: 'm-304',
+        phaseNumber: 4,
+        title: 'Approach Road Asphalt Overlay & Retaining Wing Walls',
+        description: 'Sub-base laterite compaction, crushed stone base, and asphalt binder course.',
+        targetDate: '20 Jun 2026',
+        status: 'pending',
+      },
+    ],
+    recentSiteUpdates: [
+      {
+        date: '14 Apr 2026',
+        note: 'Wing wall formwork erect. Reinforcement verified according to Federal Highway Bridge specifications.',
+        author: 'QS Oghenekaro Daniel',
+      },
+    ],
+  },
+];
+
 interface ProjectStatusTrackerProps {
   onContactProjectSupervisor?: (projectTitle: string, trackingCode: string) => void;
 }
@@ -33,10 +285,10 @@ interface ProjectStatusTrackerProps {
 export const ProjectStatusTracker: React.FC<ProjectStatusTrackerProps> = ({
   onContactProjectSupervisor,
 }) => {
-  const [trackers, setTrackers] = useState<ProjectTracker[]>([]);
-  const [loading, setLoading] = useState(true);
+  const [trackers, setTrackers] = useState<ProjectTracker[]>(INITIAL_LIVE_TRACKERS);
+  const [loading, setLoading] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
-  const [selectedTrackerId, setSelectedTrackerId] = useState<string>('');
+  const [selectedTrackerId, setSelectedTrackerId] = useState<string>('trk-001');
   const [filterStatus, setFilterStatus] = useState<string>('all');
   
   // Staff Milestone Management Mode
@@ -99,24 +351,19 @@ export const ProjectStatusTracker: React.FC<ProjectStatusTrackerProps> = ({
   // Fetch trackers from API
   const fetchTrackers = async (keepSelectedId?: string) => {
     try {
-      setLoading(true);
       const res = await fetch('/api/project-trackers');
       if (res.ok) {
         const data = await res.json();
-        if (data.success && Array.isArray(data.trackers)) {
+        if (data.success && Array.isArray(data.trackers) && data.trackers.length > 0) {
           setTrackers(data.trackers);
-          if (data.trackers.length > 0) {
-            const nextSelected = keepSelectedId && data.trackers.some((t: ProjectTracker) => t.id === keepSelectedId)
-              ? keepSelectedId
-              : data.trackers[0].id;
-            setSelectedTrackerId(nextSelected);
-          }
+          const nextSelected = keepSelectedId && data.trackers.some((t: ProjectTracker) => t.id === keepSelectedId)
+            ? keepSelectedId
+            : (data.trackers.find((t: ProjectTracker) => t.trackingCode === 'PACCF-PRJ-2026-001')?.id || data.trackers[0].id);
+          setSelectedTrackerId(nextSelected);
         }
       }
     } catch (err) {
       console.error('Failed to load project trackers:', err);
-    } finally {
-      setLoading(false);
     }
   };
 

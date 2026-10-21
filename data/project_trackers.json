@@ -1,87 +1,12 @@
 [
   {
-    "id": "trk-mve2ohka",
-    "trackingCode": "PACCF-PRJ-2026-004",
-    "clientName": "Delta State University Teaching Hospital",
-    "projectTitle": "Diagnostic Radiology & Dialysis Center Wing",
-    "projectType": "Institutional Healthcare Civil Project",
-    "location": "Oghara / Eku Corridor, Delta State",
-    "siteEngineer": "Engr. Kenneth Efe",
-    "contractor": "People and Co Construction Firm",
-    "startDate": "18 Oct 2026",
-    "estimatedCompletionDate": "To be scheduled",
-    "overallProgressPercent": 35,
-    "currentPhase": "Phase 2: Reinforced Ground Floor Substructure",
-    "status": "on_track",
-    "lastInspectionDate": "18 Oct 2026",
-    "siteHeroImage": "/images/service_building_construction_1792339538812.jpg",
-    "milestones": [
-      {
-        "id": "m-new-1",
-        "phaseNumber": 1,
-        "title": "Site Topography, Boundary Beacons & Soil Investigation",
-        "description": "Cadastral surveying and bearing capacity check.",
-        "targetDate": "Week 2",
-        "status": "completed",
-        "completedDate": "18 Oct 2026"
-      },
-      {
-        "id": "m-new-2",
-        "phaseNumber": 2,
-        "title": "Substructure Excavation & Raft Foundation Casting",
-        "description": "Excavation, rebar binding, and ready-mix concrete pour.",
-        "targetDate": "Week 5",
-        "status": "in_progress"
-      },
-      {
-        "id": "m-new-3",
-        "phaseNumber": 3,
-        "title": "DPC German Floor & Ground Floor Masonry",
-        "description": "Damp-proof course and sandcrete block laying.",
-        "targetDate": "Week 8",
-        "status": "pending"
-      },
-      {
-        "id": "m-new-4",
-        "phaseNumber": 4,
-        "title": "Suspended Concrete Decking / Superstructure Lintel",
-        "description": "Marine board formwork, high-yield rebar, and concrete pour.",
-        "targetDate": "Week 12",
-        "status": "pending"
-      },
-      {
-        "id": "m-new-5",
-        "phaseNumber": 5,
-        "title": "Structural Steel Roofing & Parapet Weatherproofing",
-        "description": "Steel trusses and stone-coated aluminium roofing.",
-        "targetDate": "Week 16",
-        "status": "pending"
-      },
-      {
-        "id": "m-new-6",
-        "phaseNumber": 6,
-        "title": "MEP Piping, Interior Finishes & Final Commissioning",
-        "description": "Conduit electrical, plumbing, tiling, and client handover.",
-        "targetDate": "Week 22",
-        "status": "pending"
-      }
-    ],
-    "recentSiteUpdates": [
-      {
-        "date": "18 Oct 2026",
-        "note": "Heavy foundation footings cast and inspected for radiation shielding compliance.",
-        "author": "Engr. Kenneth Efe"
-      }
-    ]
-  },
-  {
     "id": "trk-001",
     "trackingCode": "PACCF-PRJ-2026-001",
     "clientName": "Chief & Mrs. Ovie",
     "projectTitle": "Executive 5-Bedroom Smart Villa with Penthouse",
     "projectType": "Turnkey Residential Construction",
     "location": "Along New Eku-Abraka Expressway, Delta State",
-    "siteEngineer": "Engr. Kenneth Efe (Lead Structural Specialist)",
+    "siteEngineer": "Engr. Justice Akpochimora (Principal Lead Structural Engineer)",
     "contractor": "People and Co Construction Firm",
     "startDate": "15 Jan 2026",
     "estimatedCompletionDate": "30 Jul 2026",
